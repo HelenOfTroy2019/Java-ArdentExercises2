@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class sum_of_digits {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Please enter a positive number:");
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		
+		if (number<10 & number>0){
+			System.out.println("The sum of the number's digits is "+number);
+		}
+		
+		else if (number<100 & number>9){
+			number = (number%10)+(number/10);
+			System.out.println("The sum of the number's digits is "+number);
+		}
+		
+		else if (number<1000 & number>99){
+			number = (number%10)+((number/10)%10)+(number/100);
+			System.out.println("The sum of the number's digits is "+number);
+		}
+		
+		else if (number<10000 & number>999){
+			number = (number%10)+((number/10)%10)+((number/100)%10)+(number/1000);
+			System.out.println("The sum of the number's digits is "+number);
+		}
+		
+		else if (number>9999){
+			System.out.println("Your number is too big. Please enter a smaller number.");
+		}
+
+	}
+
+}
