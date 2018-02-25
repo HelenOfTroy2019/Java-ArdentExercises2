@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class divisible_by_11 {
+
+	public static void main(String[] args) {
+
+		System.out.print("Please enter a number:");
+		Scanner input = new Scanner(System.in);
+		int integer = input.nextInt();
+		
+		if (integer<11) {
+			System.out.println("The number is not divisible by 11.");
+		}
+		
+		else if (integer%11 >= 1) {
+			System.out.println("The number is not divisible by 11.");
+		}
+		
+		else if (integer%11 == 0) {
+			System.out.println("The number is divisible by 11.");
+		}
+		
+	}
+
+}
