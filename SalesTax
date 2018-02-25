@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class sales_tax {
+
+	public static void main(String[] args) {
+
+		System.out.println("This program calculates the sales tax of a purchase");
+		
+		System.out.print("Purchase amount?");
+		Scanner input = new Scanner(System.in);
+		double purchase = input.nextDouble();
+		
+		System.out.println("Sales tax is "+(double)(Math.round((purchase*.06)*100))/100);
+		
+	}
+
+}
