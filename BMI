@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class computing_bmi {
+
+	public static void main(String[] args) {
+
+		System.out.print("Please enter your weight in pounds:");
+		Scanner input = new Scanner(System.in);
+		double pounds = input.nextDouble();
+		System.out.print("Please enter your height in inches:");
+		int inches = input.nextInt();
+		
+		System.out.print("Your BMI is ");
+		System.out.print((pounds*.45359237)/((inches*.0254)*(inches*.0254)));
+		
+	}
+
+}
